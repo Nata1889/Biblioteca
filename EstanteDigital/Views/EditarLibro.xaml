@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EstanteDigital.Views.EditarLibro"
+             Title="EditarLibro">
+    <Grid>
+
+        <Image Source="https://wallpaper4k.top/wp-content/uploads/2023/10/c36176db-afb7-415c-ad62-4edce6ba9d2a.jpeg" Aspect="AspectFill" />
+        <ScrollView>
+            <VerticalStackLayout Spacing="10" Margin="50,10,50,10" HorizontalOptions="Center">
+                <Label 
+         Text="Editar Libro"
+         VerticalOptions="Center" 
+         HorizontalOptions="Center" />
+
+                <Label>Título:</Label>
+                <Entry x:Name="txtTitulo"></Entry>
+
+                <Label>Autor:</Label>
+                <Entry x:Name="txtAutor"></Entry>
+
+                <Label>Genero:</Label>
+                <Entry x:Name="txtGenero"></Entry>
+
+                <Label>Editorial:</Label>
+                <Entry x:Name="txtEditorial"></Entry>
+
+                <Label>URL de la imagen de Portada del libro:</Label>
+                <Entry x:Name="txtPortadaUrl"></Entry>
+
+                <Button 
+                    BackgroundColor="DarkCyan"
+                    TextColor="Black"
+                    x:Name="GuardarBtn"
+                    Text="Guardar"
+                    Clicked="GuardarBtn_Clicked" 
+                    />
+
+                <Button 
+                    BackgroundColor="DarkCyan"
+                    TextColor="Black"
+                    x:Name="CancelarBtn"
+                    Text="Cancelar"
+                    Clicked="CancelarBtn_Clicked" />
+            </VerticalStackLayout>
+        </ScrollView>
+    </Grid>
+</ContentPage>
